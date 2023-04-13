@@ -1,0 +1,328 @@
+:root {
+  --dk-blue: #0d1b2a;
+  --navy: #1b263b;
+  --md-blue: #415a77;
+  --lt-blue: #778da9;
+  --white: #e0e1dd;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* END OF CSS RESET */
+
+/* UNIVERSAL STYLES */
+body {
+  background-color: var(--dk-blue);
+  color: var(--white);
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+p,
+li {
+  font-family: "DM Sans", sans-serif;
+}
+/* HEADER STYLES */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+nav h1 {
+  padding: 1em;
+  font-size: 2em;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding: 1em;
+  background-color: var(--dk-blue);
+  margin: 1em;
+  width: 8em;
+  text-align: center;
+  border-radius: 5%;
+  font-size: 1.1em;
+  transition: 0.5s;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+header img {
+  margin: 0 auto;
+  width: 100%;
+}
+/* ANIMATION STYLES */
+nav li:hover {
+  box-shadow: 0px 6px 0px var(--dk-blue);
+  transform: scale(1.1);
+}
+.toparrow:hover {
+  color: var(--dk-blue);
+  transform: rotate(1turn);
+}
+/* BODY STYLES */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header,
+footer {
+  background-color: var(--md-blue);
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  margin: 0 auto;
+  font-size: 1.75em;
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+h2 + p {
+  padding: 0 0 2em 0;
+}
+section {
+  border: 2px solid var(--md-blue);
+  display: flex;
+  margin-bottom: 2em;
+  background-color: var(--md-blue);
+  border-radius: 1%;
+}
+section img {
+  overflow: hidden;
+  width: 200em;
+}
+h3 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 1em;
+  font-weight: bold;
+}
+p {
+  font-size: 1.1em;
+  padding: 1em;
+  line-height: 1.5;
+}
+/* FOOTER STYLES */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+footer p {
+  padding-top: 0;
+}
+.footerinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.toparrow {
+  font-size: 2em;
+  color: var(--white);
+  transition: 0.7s;
+}
+
+/* FORM STYLING */
+form {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+#submit {
+  border: none;
+  background-color: var(--lt-blue);
+  color: var(--white);
+  padding: 1em;
+  text-align: center;
+  border-radius: 5%;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.7s;
+}
+#submit:hover {
+  background-color: var(--md-blue);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+.radios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+.method {
+  border: 2px solid white;
+}
+@media (max-width: 800px){
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  section img{
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  ul{
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    justify-content: center;
+  }
+  footer{
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+}
