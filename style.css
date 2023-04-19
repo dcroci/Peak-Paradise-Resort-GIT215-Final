@@ -150,6 +150,10 @@ a {
   text-decoration: none;
   color: var(--white);
 }
+li:nth-of-type(2):hover{
+  transform: scale(1.0);
+  box-shadow: none;
+}
 h1,
 h2,
 h3,
@@ -341,6 +345,12 @@ form {
 #comments{
   width: 100%;
 }
+label{
+  margin-bottom: 1em;
+}
+
+
+/* media queries */
 @media (max-width: 635px){
   nav{
     display: flex;
