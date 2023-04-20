@@ -33,63 +33,43 @@
         <img src="assets/swiss-valley.jpg" alt="Image of a Swiss Valley">
     </header>
     <main>
-        <div class="container">
-            <div class="centered_content">
-                <div class="left">
-                    <h2>
-                        Contact Us
-                    </h2>
-                    <p>
-                        Please reach out to us with any questions or concerns. We are happy to help you plan your dream
-                        vacation
-                        with us!
-                    </p>
-                    <img src="assets/swiss-peak.jpg" alt="">
-                </div>
-                <div class="right">
-                    <form action="https://wp.zybooks.com/form-viewer.php">
-                        <fieldset class="text">
-                            <label for="fullname">Full Name: </label>
-                            <input type="text" name="fullname" id="fullname" required>
-                        </fieldset>
-                        <fieldset class="text">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" required>
-                        </fieldset>
-                        <fieldset class="text">
-                            <label for="phonenumber">Phone Number:</label>
-                            <input type="tel" name="phonenumber" id="phonenumber" required>
-                        </fieldset>
-                        <fieldset class="radios">
-                            <label for="method">Preferred Method: </label>
-                            <div class="method">
-                                <label for="phonepref">Phone</label>
-                                <input type="radio" name="prefcontact" id="phonepref" value="phone">
-                                <label for="emailpref">Email</label>
-                                <input type="radio" name="prefcontact" id="emailpref" value="email">
-                            </div>
-                        </fieldset>
-                        <fieldset class="text">
-                            <label for="comments">Comments: </label>
-                            <textarea name="comments" id="comments"></textarea>
-                        </fieldset>
-                        <fieldset class="text">
-                            <input type="submit" name="submit" id="submit" value="Submit">
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <section>
+            <h2>
+                Contact Us
+            </h2>
+            <p>
+                Please reach out to us with any questions or concerns. We are happy to help you plan your dream
+                vacation
+                with us!
+            </p>
+            <img src="assets/swiss-peak.jpg" alt="">
+            <form action="https://wp.zybooks.com/form-viewer.php">
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="fullname" id="fullname" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" name="phonenumber" id="phonenumber" required>
+                <fieldset>
+                    <legend for="method">Preferred Method: </legend>
+                        <label for="phonepref">Phone</label>
+                        <input type="radio" name="prefcontact" id="phonepref" value="phone">
+                        <label for="emailpref">Email</label>
+                        <input type="radio" name="prefcontact" id="emailpref" value="email">
+                </fieldset>
+                <label for="comments">Comments: </label>
+                <textarea name="comments" id="comments"></textarea>
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+        </section>
     </main>
     <footer>
-        <div class="footerinfo">
-            <p>
-                Copyright ©2023 - Peak Paradise Resort
-            </p>
-            <p>
-                This site is for educational purposes only
-            </p>
-        </div>
+        <p>
+            Copyright ©2023 - Peak Paradise Resort
+        </p>
+        <p>
+            This site is for educational purposes only
+        </p>
         <a href="#" aria-label="Back to top button">
             <i class="fa-solid fa-circle-arrow-up toparrow"></i>
         </a>
