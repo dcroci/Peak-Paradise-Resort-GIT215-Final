@@ -174,7 +174,7 @@ nav {
 }
 nav h1 {
   padding: 1em;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
 }
 nav ul {
@@ -187,7 +187,7 @@ nav li {
   width: 8em;
   text-align: center;
   border-radius: 5%;
-  font-size: 1.1em;
+  font-size: 1.5em;
   transition: 0.5s;
 }
 header {
@@ -220,7 +220,7 @@ footer {
 main {
   display: flex;
   flex-direction: column;
-  margin: 2em 0;
+  margin: 4em 0;
 }
 h2 {
   margin: 0 auto;
@@ -236,7 +236,6 @@ h2 + p {
   margin: 0 auto;
 }
 section {
-<<<<<<< HEAD
   display: flex;
   margin: 0 auto;
   width: 100%;
@@ -244,58 +243,68 @@ section {
   margin-bottom: 2em;
   background-color: var(--md-blue);
   border-radius: 1%;
+  height: 80%;
 }
 section p{
   align-items: center;
   justify-content: center;
+  font-size: 1.5em;
 }
-.contact{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content min-content 1fr;
+.contact {
+	width: 80%;
+	margin: 0 auto;
+	border: 2px solid var(--md-blue);
+	background-color: var(--md-blue);
+	border-radius: 1%;
+  justify-content: center;
+  padding: 2em 0;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+}
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 30%;
+}
+.form input{
   width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-=======
->>>>>>> parent of d43b988 (changed form to grid)
-  border: 2px solid var(--md-blue);
-  display: flex;
-  margin-bottom: 2em;
-  background-color: var(--md-blue);
-  border-radius: 1%;
 }
-<<<<<<< HEAD
 section img{
-  width: 100%;
-}
-.contact img {
-  grid-column: 1 / 2;
+  width: 50%;
 }
 .content {
-  width: 55ch;
+  max-width: 55ch;
   display: flex;
-  margin-left: 1rem;
+  margin: 0 auto;
   flex-direction: column;
-=======
-section img {
-  overflow: hidden;
-  width: 200em;
->>>>>>> parent of d43b988 (changed form to grid)
 }
 fieldset{
   display: flex;
-  padding-bottom: 2rem;
+  width: 100%;
+}
+legend{
+  margin: 0 auto;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+label{
+  font-size: 1.5em;
 }
 
 h3 {
   margin: 0 auto;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.75em;
   padding: 1em;
   font-weight: bold;
 }
 p {
-  font-size: 1.1em;
+  font-size: 1.5em;
   padding: 1em;
   line-height: 1.5;
 }
@@ -330,43 +339,21 @@ form {
   height: 100%;
   padding: 0em 2em;
 }
-.centered_content{
-  display: flex;
-  justify-content: center;
-  padding: 2em;
-}
-.left{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.left h2{
-  display: flex;
-  justify-content: flex-start;
-}
-.right{
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 #submit {
   border: none;
   background-color: var(--lt-blue);
   color: var(--white);
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
-  border-radius: 5%;
-  font-size: 1.1em;
+  border-radius: 2%;
+  font-size: 1.5em;
   cursor: pointer;
   transition: 0.7s;
   width: 100%;
 }
 #submit:hover {
-  background-color: var(--md-blue);
+  background-color: var(--navy);
 }
 .text {
   display: flex;
@@ -380,17 +367,6 @@ form {
   width: 100%;
   padding-top: 3em;
 }
-.method {
-  border: 2px solid white;
-  width: 100%;
-}
-#comments{
-  width: 100%;
-}
-label{
-  margin-bottom: 1em;
-}
-
 
 /* media queries */
 @media (max-width: 635px){
